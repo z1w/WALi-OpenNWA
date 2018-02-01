@@ -9,7 +9,7 @@ if Debug:
     print '\n+++ Entered "#/Examples/Reach/SConscript"\n'
     
 ExReach = ProgEnv.Program('ExReach',
-                          ['Reach.cpp','ExReachWit.cpp'] + ProgEnv['StaticLibs'])
+                          ['Reach.cpp','ExReach.cpp'] + ProgEnv['StaticLibs'])
 
 built = [ProgEnv.Install(os.path.join(WaliDir,'Examples','bin'), ExReach)]
 
